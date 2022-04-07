@@ -115,6 +115,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = () => {
+  console.log('I am deployed');
+};
+
 const initialize = function () {
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
@@ -122,6 +126,7 @@ const initialize = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView._addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 
 initialize();

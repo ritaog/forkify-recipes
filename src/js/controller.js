@@ -10,11 +10,6 @@ import { MODAL_CLOSE_SEC } from './config.js';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
-/*
-if (module.hot) {
-  module.hot.accept();
-} */
-
 const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
@@ -115,10 +110,6 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const newFeature = () => {
-  console.log('I am deployed');
-};
-
 const initialize = function () {
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
@@ -126,7 +117,6 @@ const initialize = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView._addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 
 initialize();

@@ -2,9 +2,10 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipes Application",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Rita Ogedegbe",
   "license": "ISC",
@@ -19,6 +20,5 @@
     "fractional": "^1.0.0",
     "fracty": "^1.0.9",
     "regenerator-runtime": "^0.13.7"
-  },
-  "main": "index.js"
+  }
 }
